@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trabalho com formulário</title>
+</head>
+<body>
+    <!-- Post - envia dados no corpo da requisição
+         Get - envia dados via url como parêmetro-->
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Informe aqui o seu nome" required size="30">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Informe seu email" size="30">
+        <br>
+        <br>
+        <label for="data">Data:</label>
+        <input type="datetime-local" name="data" id="data">
+        <br>
+        <br>
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+        <br>
+        <br>
+        <label for="data-time">Data e hora:</label>
+        <input type="datetime" name="data-time" id="data-time">
+        <br>
+        <br>
+        <label for="time">Hora:</label>
+        <input type="time" name="time" id="time">
+        <br>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone">
+        <br>
+        <br>
+        <label for="tempo">Tempo de visita:</label>
+        <input type="number" name="tempo" id="tempo" min="0" max="60" step="2">
+        <br>
+        <br>
+        <label for="atracao">Atração:</label>
+        <select name="atracao" id="atracao">
+            <option value="praia_do_frances">Praia do Francês</option>
+            <option value="praia_do_gunga">Praia do Gunga</option>
+            <option value="praia_do_pontal" selected>Praia do Pontal</option>
+            <option value="praia_do_retiro">Praia do Retiro</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Escolha seu transporte:</legend>
+            <input type="radio" name="transporte" id="carro" value="carro">
+            <label for="carro">Carro</label>
+            <input type="radio" name="transporte" id="onibus" value="onibus">
+            <label for="onibus">Onibus</label>
+            <input type="radio" name="transporte" id="van" value="van">
+            <label for="van">Van</label>
+        </fieldset>
+        <br>
+        <br>
+        <input type="checkbox" name="termos" id="termos">
+        <label for="termos">Aceito os termos de uso</label>
+        <br>
+        <br>
+        <label for="observacao"></label>
+        <textarea
+            name="observacao"
+            id="observacao"
+            cols="38"
+            rows="18"
+            placeholder="observacao"
+            ></textarea>
+    </form>
+</body>
+</html>
